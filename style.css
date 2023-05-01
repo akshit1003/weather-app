@@ -6,7 +6,7 @@ body{
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
     background: #222;
-    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-image: url(' ');
     background-size: cover;
     font-size: 120%;
 
@@ -41,7 +41,7 @@ button {
     transition: 0.2s ease-in-out;
   }
   
-  input.search-bar {
+input.search-bar {
     border: none;
     outline: none;
     padding: 0.4em 1em;
@@ -53,12 +53,36 @@ button {
     width: calc(100% - 100px);
   }
   
-  button:hover {
+button:hover {
     background: #7c7c7c6b;
   }
 
-  h1.temp {
+h1.temp {
     margin: 0;
     margin-bottom: 0.4em;
   }
-  
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.description{
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
